@@ -2,7 +2,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-
+    flex-direction: column;
 }
 
 .content {
@@ -20,8 +20,8 @@ body {
     padding: 0;
     margin: 0;
     border: 1px solid green;
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,4 +30,20 @@ body {
 
 .color {
     background-color: aqua;
+}
+
+.button {
+    background-color: rgba(0, 60, 255, 0.719);
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: aliceblue;
+    font-weight: 700;
+    margin: 20px;
+    transition: 0.3s;
+
+}
+
+.button:hover {
+    background-color: rgba(0, 102, 255, 0.719);
 }
