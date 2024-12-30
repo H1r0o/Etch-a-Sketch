@@ -1,10 +1,25 @@
 const container = document.getElementById("container");
 
-let pixels = 256;
+let pixels = 255;
+let wh = 16;
 
-for (let i = 0; i <= pixels; i++) {
+const columns = document.createElement("div");
+columns.classList.add("column");
+container.appendChild(columns);
 
-    const content = document.createElement("div");
-    content.classList.add("content");
-    container.appendChild(content);
+for (let i = 1; i <= wh; i++) {
+    const rows = document.createElement("div");
+    rows.classList.add("row");
+    columns.appendChild(rows);
+
+
+    for (let i = 1; i <= wh; i++) {
+
+        const content = document.createElement("div");
+        content.classList.add("content");
+        rows.appendChild(content);
+    }
+
 }
+
+
