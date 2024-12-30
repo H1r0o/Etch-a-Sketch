@@ -1,6 +1,5 @@
 const container = document.getElementById("container");
 
-let pixels = 255;
 let wh = 16;
 
 const columns = document.createElement("div");
@@ -18,8 +17,10 @@ for (let i = 1; i <= wh; i++) {
         const content = document.createElement("div");
         content.classList.add("content");
         rows.appendChild(content);
+        content.addEventListener("mouseover", event => {
+            event.target.classList.add("color");
+        })
     }
 
 }
-
 
